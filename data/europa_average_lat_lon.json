@@ -1,0 +1,365 @@
+[
+  {
+    "Country": "Albania",
+    "code": "AL",
+    "Alpha-3 code": "ALB",
+    "Numeric code": 8,
+    "Latitude": 41,
+    "Longitude": 20
+  },
+    {
+      "Country": "Andorra",
+      "code": "AD",
+      "Alpha-3 code": "AND",
+      "Numeric code": 20,
+      "Latitude": 42.5,
+      "Longitude": 1.6
+    },
+    {
+      "Country": "Austria",
+      "code": "AT",
+      "Alpha-3 code": "AUT",
+      "Numeric code": 40,
+      "Latitude": 47.3333,
+      "Longitude": 13.3333
+    },
+    {
+      "Country": "Belarus",
+      "code": "BY",
+      "Alpha-3 code": "BLR",
+      "Numeric code": 112,
+      "Latitude": 53,
+      "Longitude": 28
+    },
+    {
+      "Country": "Belgium",
+      "code": "BE",
+      "Alpha-3 code": "BEL",
+      "Numeric code": 56,
+      "Latitude": 50.8333,
+      "Longitude": 4
+    },
+    {
+      "Country": "Bosnia and Herzegovina",
+      "code": "BA",
+      "Alpha-3 code": "BIH",
+      "Numeric code": 70,
+      "Latitude": 44,
+      "Longitude": 18
+    },
+    {
+      "Country": "Bulgaria",
+      "code": "BG",
+      "Alpha-3 code": "BGR",
+      "Numeric code": 100,
+      "Latitude": 43,
+      "Longitude": 25
+    },
+    {
+      "Country": "Croatia",
+      "code": "HR",
+      "Alpha-3 code": "HRV",
+      "Numeric code": 191,
+      "Latitude": 45.1667,
+      "Longitude": 15.5
+    },
+
+    {
+      "Country": "Cyprus",
+      "code": "CY",
+      "Alpha-3 code": "CYP",
+      "Numeric code": 196,
+      "Latitude": 35,
+      "Longitude": 33
+    },
+    {
+      "Country": "Czech Republic",
+      "code": "CZ",
+      "Alpha-3 code": "CZE",
+      "Numeric code": 203,
+      "Latitude": 49.75,
+      "Longitude": 15.5
+    },
+    {
+      "Country": "Denmark",
+      "code": "DK",
+      "Alpha-3 code": "DNK",
+      "Numeric code": 208,
+      "Latitude": 56,
+      "Longitude": 10
+    },
+    {
+      "Country": "Estonia",
+      "code": "EE",
+      "Alpha-3 code": "EST",
+      "Numeric code": 233,
+      "Latitude": 59,
+      "Longitude": 26
+    },
+    {
+      "Country": "Faroe Islands",
+      "code": "FO",
+      "Alpha-3 code": "FRO",
+      "Numeric code": 234,
+      "Latitude": 62,
+      "Longitude": -7
+    },
+  
+    {
+      "Country": "Finland",
+      "code": "FI",
+      "Alpha-3 code": "FIN",
+      "Numeric code": 246,
+      "Latitude": 64,
+      "Longitude": 26
+    },
+    {
+      "Country": "France",
+      "code": "FR",
+      "Alpha-3 code": "FRA",
+      "Numeric code": 250,
+      "Latitude": 46,
+      "Longitude": 2
+    },
+
+    {
+      "Country": "Germany",
+      "code": "DE",
+      "Alpha-3 code": "DEU",
+      "Numeric code": 276,
+      "Latitude": 51,
+      "Longitude": 9
+    },
+    {
+      "Country": "Gibraltar",
+      "code": "GI",
+      "Alpha-3 code": "GIB",
+      "Numeric code": 292,
+      "Latitude": 36.1833,
+      "Longitude": -5.3667
+    },
+    {
+      "Country": "Greece",
+      "code": "GR",
+      "Alpha-3 code": "GRC",
+      "Numeric code": 300,
+      "Latitude": 39,
+      "Longitude": 22
+    },
+    {
+      "Country": "Hungary",
+      "code": "HU",
+      "Alpha-3 code": "HUN",
+      "Numeric code": 348,
+      "Latitude": 47,
+      "Longitude": 20
+    },
+    {
+      "Country": "Iceland",
+      "code": "IS",
+      "Alpha-3 code": "ISL",
+      "Numeric code": 352,
+      "Latitude": 65,
+      "Longitude": -18
+    },
+    {
+      "Country": "Ireland",
+      "code": "IE",
+      "Alpha-3 code": "IRL",
+      "Numeric code": 372,
+      "Latitude": 53,
+      "Longitude": -8
+    },
+    {
+      "Country": "Italy",
+      "code": "IT",
+      "Alpha-3 code": "ITA",
+      "Numeric code": 380,
+      "Latitude": 42.8333,
+      "Longitude": 12.8333
+    },
+    {
+      "Country": "Latvia",
+      "code": "LV",
+      "Alpha-3 code": "LVA",
+      "Numeric code": 428,
+      "Latitude": 57,
+      "Longitude": 25
+    },
+    {
+      "Country": "Liechtenstein",
+      "code": "LI",
+      "Alpha-3 code": "LIE",
+      "Numeric code": 438,
+      "Latitude": 47.1667,
+      "Longitude": 9.5333
+    },
+    {
+      "Country": "Lithuania",
+      "code": "LT",
+      "Alpha-3 code": "LTU",
+      "Numeric code": 440,
+      "Latitude": 56,
+      "Longitude": 24
+    },
+    {
+      "Country": "Luxembourg",
+      "code": "LU",
+      "Alpha-3 code": "LUX",
+      "Numeric code": 442,
+      "Latitude": 49.75,
+      "Longitude": 6.1667
+    },
+    {
+      "Country": "Macedonia",
+      "code": "MK",
+      "Alpha-3 code": "MKD",
+      "Numeric code": 807,
+      "Latitude": 41.8333,
+      "Longitude": 22
+    },
+    {
+      "Country": "Malta",
+      "code": "MT",
+      "Alpha-3 code": "MLT",
+      "Numeric code": 470,
+      "Latitude": 35.8333,
+      "Longitude": 14.5833
+    },
+    {
+      "Country": "Moldova",
+      "code": "MD",
+      "Alpha-3 code": "MDA",
+      "Numeric code": 498,
+      "Latitude": 47,
+      "Longitude": 29
+    },
+    {
+      "Country": "Monaco",
+      "code": "MC",
+      "Alpha-3 code": "MCO",
+      "Numeric code": 492,
+      "Latitude": 43.7333,
+      "Longitude": 7.4
+    },
+    {
+      "Country": "Montenegro",
+      "code": "ME",
+      "Alpha-3 code": "MNE",
+      "Numeric code": 499,
+      "Latitude": 42,
+      "Longitude": 19
+    },
+    {
+      "Country": "Netherlands",
+      "code": "NL",
+      "Alpha-3 code": "NLD",
+      "Numeric code": 528,
+      "Latitude": 52.5,
+      "Longitude": 5.75
+    },
+    {
+      "Country": "Norway",
+      "code": "NO",
+      "Alpha-3 code": "NOR",
+      "Numeric code": 578,
+      "Latitude": 62,
+      "Longitude": 10
+    }, 
+    {
+      "Country": "Poland",
+      "code": "PL",
+      "Alpha-3 code": "POL",
+      "Numeric code": 616,
+      "Latitude": 52,
+      "Longitude": 20
+    },
+    {
+      "Country": "Portugal",
+      "code": "PT",
+      "Alpha-3 code": "PRT",
+      "Numeric code": 620,
+      "Latitude": 39.5,
+      "Longitude": -8
+    },
+    {
+      "Country": "Romania",
+      "code": "RO",
+      "Alpha-3 code": "ROU",
+      "Numeric code": 642,
+      "Latitude": 46,
+      "Longitude": 25
+    },
+    {
+      "Country": "Russia",
+      "code": "RU",
+      "Alpha-3 code": "RUS",
+      "Numeric code": 643,
+      "Latitude": 55.76,
+      "Longitude": 37.6
+    },
+    {
+      "Country": "San Marino",
+      "code": "SM",
+      "Alpha-3 code": "SMR",
+      "Numeric code": 674,
+      "Latitude": 43.7667,
+      "Longitude": 12.4167
+    },
+    {
+      "Country": "Slovakia",
+      "code": "SK",
+      "Alpha-3 code": "SVK",
+      "Numeric code": 703,
+      "Latitude": 48.6667,
+      "Longitude": 19.5
+    },
+    {
+      "Country": "Slovenia",
+      "code": "SI",
+      "Alpha-3 code": "SVN",
+      "Numeric code": 705,
+      "Latitude": 46,
+      "Longitude": 15
+    },
+    {
+      "Country": "Spain",
+      "code": "ES",
+      "Alpha-3 code": "ESP",
+      "Numeric code": 724,
+      "Latitude": 40,
+      "Longitude": -4
+    },
+    {
+      "Country": "Sweden",
+      "code": "SE",
+      "Alpha-3 code": "SWE",
+      "Numeric code": 752,
+      "Latitude": 62,
+      "Longitude": 15
+    },
+    {
+      "Country": "Switzerland",
+      "code": "CH",
+      "Alpha-3 code": "CHE",
+      "Numeric code": 756,
+      "Latitude": 47,
+      "Longitude": 8
+    },
+    {
+      "Country": "Ukraine",
+      "code": "UA",
+      "Alpha-3 code": "UKR",
+      "Numeric code": 804,
+      "Latitude": 49,
+      "Longitude": 32
+    },
+    {
+      "Country": "United Kingdom",
+      "code": "GB",
+      "Alpha-3 code": "GBR",
+      "Numeric code": 826,
+      "Latitude": 54,
+      "Longitude": -2
+    }
+  ]

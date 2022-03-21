@@ -1,0 +1,59 @@
+country,code,listed,added
+Åland,,true,false
+Andorra,,true,false
+Australia,AU,true,false
+Austria,AT,true,true
+Belarus,BY,false,false
+Belgium,BE,true,true
+Brazil,BR,true,false
+Bulgaria,BG,true,true
+Canada,CA,true,false
+Chile,CL,true,false
+China,CN,true,false
+Croatia,HR,true,true
+Czech Republic,CZ,true,true
+Denmark,DK,true,true
+Estonia,EE,true,true
+Finland,FI,true,true
+France,FR,true,true
+Germany,DE,true,true
+Gibraltar,,true,false
+Greece,GR,true,true
+Guernsey,,true,false
+Hungary,HU,true,true
+Iceland,IS,true,true
+India,IN,true,false
+Ireland,IE,true,true
+Isle of Man,,true,false
+Israel,IL,true,false
+Italy,IT,true,true
+Japan,JP,true,false
+Jersey,,true,false
+Latvia,LV,true,true
+Liechtenstein,LI,true,false
+Lithuania,LT,true,true
+Luxembourg,LU,true,true
+Malta,MT,true,false
+Mexico,MX,true,false
+Moldova,MD,false,false
+Monaco,,true,false
+Netherlands,NL,true,true
+New Zealand,NZ,true,false
+Norway,NO,true,true
+Poland,PL,true,true
+Portugal,PT,true,true
+Romania,RO,true,true
+Russia,RU,true,true
+San Marino,,true,false
+Serbia,RS,false,false
+Slovakia,SK,true,true
+Slovenia,SI,true,true
+South Africa,ZA,true,false
+South Korea,KR,true,false
+Spain,ES,true,true
+Sweden,SE,true,true
+Switzerland,CH,true,true
+Turkey,TR,true,false
+Ukraine,UA,false,false
+United Kingdom,GB,true,true
+United States,US,true,false
