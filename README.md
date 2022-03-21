@@ -1,4 +1,4 @@
-# Information Visialization Project 
+# Information Visualization Project 
 
 This project visualizes the impact of major catastrophies on the patent applications in various parts of the world.
 
