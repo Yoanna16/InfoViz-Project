@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Team 03</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Load d3.js and the geo projection plugin -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header></header>
+    <!-- Create an element where the map will take place -->
+    <div id="my_dataviz">
+        <div id="menu">
+            <a href="about.html" class="about-btn">ABOUT</a>
+        </div>
+        <div class="info">
+            <div class="slidercontainer">
+                <input type="range" min="1980" max="2014" value="1998" class="slider" id="myRange" step="1">
+                <div class="labelcontainer">
+                    <button id ="minus10button" class ="sliderbutton" onclick="addSliderValue(-10)">-10</button>
+                    <button id= "minus1button" class ="sliderbutton" onclick="addSliderValue(-1)"><</button>
+                    <label id="rangeLabel" for="myRange"></label>
+                    <button id ="plus1button" class ="sliderbutton" onclick="addSliderValue(1)">></button>
+                    <button id= "plus10button" class ="sliderbutton" onclick="addSliderValue(10)">+10</button>
+                </div>
+
+            </div>
+            <div class="dropdown">
+                <select name="disasterSelect" id="dropdown" class="dropdowncontent" onchange="updateInfo()">
+                    <option value="Chernobyl 1986" class="dropdownoption">Chernobyl nuclear accident</option>
+                    <option value="Tsunami 2004" class="dropdownoption">Boxing Day Tsunami</option>
+                    <option value="Hurricane Katrina 2005" class="dropdownoption">Hurricane Katrina</option>
+                    <option value="Haiti earthquake 2010" class="dropdownoption">Haiti earthquake</option>
+                    <option value="Fukushima 2011" class="dropdownoption">Fukushima nuclear disaster</option>
+                </select>
+            </div>
+            <div class="description">
+                <p id="infotext"></p>
+                <!--<a id="infoLink" href="#" target="_blank">More Information</a>-->
+            </div>
+            <div class="diagram">
+                <span class="info-circle" id="line-chart-help" onmouseover="showHelp(this)" onmouseleave="hideHelp()">?</span>
+                <canvas id="lineChartCountries" style="width:100%; max-width: 700px"></canvas>
+            </div>
+            <div class="barchart">
+                <span class="info-circle" id="line-chart-patent-help" onmouseover="showHelp(this)" onmouseleave="hideHelp()">?</span>
+                <canvas id="lineChartPatentTypes" style="width: 100%; max-width: 700px;"></canvas>
+            </div>
+        </div>
+        <div class="zoom zoom--from-right" id='zoom'>
+            <header class="zoom-header">
+                <button id="zoomout" onclick="zoomOut()">Zoom Out</button>
+            </header>
+            <div class='zoom-container'>
+                <div class="zoom-text" id="zoom-country-name"></div>
+                <div class="pieChart">
+                    <span class="info-circle" id="pie-chart-help" onmouseover='showHelp(this)' onmouseleave="hideHelp()">?</span>
+                    <canvas id="myPieChart" style="width: 100%; max-width: 700px;"></canvas>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script>
+
+    /*----      ----        ----        insert .csv files here      ----        ----       ----*/
+    // example: d3.csv(url of .csv file, (data) => your function (data));
+
+    function loadCSV () {
+        //d3.csv("./data/csv/DE.csv", (data) => passDataToChartCSV(data));
+    }
+
+    /*--    ---     ---     ---        insert .js files here     ---     ---     ---        --*/
+
+    const scripts = [
+        "./script/slider.js",
+        "./script/lineCharts.js",
+        "./script/data.js",
+        "./script/data_pieChart.js",
+        "./script/data_lcc.js",
+        "./script/data_lcpt.js",
+        "./script/pieChart.js",
+        "./script/lineChartCountries.js",
+        "./script/lineChartPatentTypes.js",
+        "./script/map_data.js",
+        "./script/map.js",
+        "./script/info.js",
+        "./script/init.js"
+    ];
+
+    function loadScripts (scripts) {
+        for (let src of scripts){
+            let script = document.createElement("script");
+            script.setAttribute("src", src);
+            document.body.appendChild(script);
+        }
+        loadCSV();
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {loadScripts (scripts)});
+
+    /*--    ---     ---     ---        end of loading files      ---     ---     ---        --*/
+
+</script>
+</html>

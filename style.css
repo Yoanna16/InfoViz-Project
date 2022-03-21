@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+@import url("//fonts.googleapis.com/css?family=Open+Sans");
+
+
+body {
+    background-color: #dee9e9;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ----------------------------------------------------- map ----------------------------------------------------- */
+#my_dataviz{
+    position: absolute;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    height: 95%;
+    width: 100%;
+    background-color: #dee9e9;
+}
+
+
+.tooltip{
+    visibility: hidden;
+    background-color: #dee9e9;
+    color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+}
+
+.country_projection{
+    stroke: #dee9e9;
+    opacity: 1;
+}
+
+.country_projection:hover{
+    fill: #86b4b4;
+}
+
+
+
+
+
+.circle{
+    fill: #86b4b4;
+    stroke: #599191;
+    stroke-width: 1px;
+    fill-opacity: 0.9;
+    cursor:pointer;
+    transition: opacity 250ms;
+    /*r: 5px;*/
+}
+
+.circle:hover{
+    opacity: 1;
+    stroke-width: 3px;
+}
+
+/* ------------------------------------------------- left elements ------------------------------------------------- */
+
+
+.info{
+    position: fixed;
+    width: 480px;
+    height: 100%;
+    margin-left: 0px;
+    background-color: #dee9e9;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 3px 0 10px black;
+}
+
+.info-circle{
+    position:relative;
+    background-color: #599191;
+    stroke: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor:pointer;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    stroke: black;
+    /*r: 5px;*/
+}
+
+#line-chart-help{
+    left: 95%;
+    top: 12.5%;
+}
+
+#line-chart-patent-help{
+    left: 95%;
+    top: 10%;
+}
+
+#pie-chart-help {
+    left: 95%;
+    top: 30px;
+
+}
+
+.info-circle:hover {
+    stroke-width: 3px;
+}
+
+.help-tooltip{
+
+    background-color: #dee9e9;
+    color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    visibility: hidden;
+    width: 300px;
+    text-align: justify-all;
+}
+
+
+/* ---------------------------------------------------- slider ---------------------------------------------------- */
+
+.slidercontainer{
+    width: 480px;
+    height: 90px;
+}
+
+#myRange{
+    margin-top: 20px;
+    height: 15px;
+}
+
+/* Removes all standard styling, so we can apply our own. Changes are done for Webkit and Firefox. */
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    opacity: 0.9;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+
+/* Styling the slider thumb for Webkit */
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2px solid black;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: black;
+    margin-top: -6px;
+    cursor: pointer;
+}
+
+/* Similar changes for Firefox */
+
+.slider::-moz-range-thumb {
+    border: 2px solid black;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: black;
+    cursor: pointer;
+}
+
+/* Styling the track for the slider for Webkit */
+
+.slider::-webkit-slider-runnable-track {
+    height: 9px;
+    background: #599191;
+    border-radius: 3px;
+}
+
+/* Styling the track for the slider for Firefox */
+
+.slider::-moz-range-track {
+    height: 9px;
+    background: #599191;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+.labelcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    height: 30px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    font: 1rem 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.sliderbutton{
+    height: 30px;
+    width: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #599191;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* ------------------------------------------------ dropdown menu ------------------------------------------------- */
+
+.dropdown{
+    display:flex;
+    background-color: #a36c22;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.dropdowncontent{
+    position:relative;
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color: #599191;
+    font-size: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+
+/* -------------------------------------------------- info text --------------------------------------------------- */
+
+.description{
+    text-align: justify;
+    color: black;
+    border-color: #e5c5ad;
+    font-size: 12px;
+    max-width: 480px;
+    }
+
+p{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+
+
+/* --------------------------------------------------- diagram ---------------------------------------------------- */
+.diagram{
+    position:relative;
+    height: 250px;
+    margin-top: 20px;
+    background-color: transparent;
+}
+/*--------------------------------------------------- bar chart ---------------------------------------------------- */
+.barchart{
+    height: 250px;
+    margin-top: 30px;
+
+}
+
+.backgroundColor {
+    color: #69b3a2
+}
+
+.borderColor {
+    color: #69b3a2
+}
+/* ------------------------------------------screen adjustment min 851px------------------------------------------- */
+
+@media screen and (min-height: 851px) {
+
+/* -------------------------------------------------- info text --------------------------------------------------- */
+    .description{
+        text-align: justify;
+        color: black;
+        border-color: #e5c5ad;
+        font-size: 14px;
+        max-width: fit-content;
+        }
+/* --------------------------------------------------- diagram ---------------------------------------------------- */
+    .diagram{
+        height: 250px;
+        margin-top: 20px;
+        background-color: transparent;
+    }
+/*--------------------------------------------------- bar chart ---------------------------------------------------- */
+    .barchart{
+        height: 250px;
+        margin-top: 50px;
+    }
+
+    .backgroundColor {
+        color: #69b3a2
+    }
+
+    .borderColor {
+        color: #69b3a2
+    }
+}
+/* ---------------------------------------- screen adjustment max 850px ------------------------------------------- */
+@media screen and (max-height: 850px) {
+/* -------------------------------------------------- info text --------------------------------------------------- */
+    .info {
+        width: 420px;
+        height: 105%;
+    }
+
+    .slidercontainer { width: 420px; }
+
+    .description{
+        text-align: justify;
+        color: black;
+        border-color: #e5c5ad;
+        font-size: 12px;
+        max-width: fit-content;
+        }
+
+    p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 3px;
+    }
+/* --------------------------------------------------- diagram ---------------------------------------------------- */
+    .diagram{
+        height: 180px;
+        margin: 0;
+        background-color: transparent;
+        top: -10px;
+    }
+/*--------------------------------------------------- bar chart ---------------------------------------------------- */
+    .barchart{
+        height: 260px;
+        margin-top: 0;
+    }
+
+    .backgroundColor {
+        color: #69b3a2
+    }
+
+    .borderColor {
+        color: #69b3a2
+    }
+}
+
+.zoom {
+    visibility: hidden;
+    position: fixed;
+    width: 400px;
+    right: 0;
+    height: 100%;
+    margin-left: 0px;
+    background-color: #dee9e9;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: -3px 0 10px black;
+}
+
+.zoom-container{
+    position: relative;
+    top: 5%;
+}
+
+.zoom-header {
+    position:relative;
+    display: flex;
+    justify-content: right;
+
+}
+
+.zoom-text{
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#zoomout {
+    position:absolute;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: #dee9e9;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    top:10px;
+    left: 0; 
+
+}
+
+.info-text {
+    position: absolute;
+    justify-self: center;
+    align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+
+
+.pieChart {
+    height: 600px;
+    position: relative;
+    align: center;
+    justify-content: center;
+}
+
+
+
+/*--------------------------------------------------- footer ---------------------------------------------------- */
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:20px;   /* Height of the footer */
+ }
+
+#menu {
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    margin-top: 15px;
+    margin-right: 10px;
+    /* text-align: center; */
+    position: absolute;
+    font-size: 12px;
+    display: flex;
+    /* justify-content: stretch; */
+    top: 0;
+    right: 0;
+}
+
+.about-page {
+    background-color: #dee9e9;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    margin-left: 50px;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.text {
+    max-width: 80%;
+}
+
+.back-button {
+    /*appearance: button;*/
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.back-button:hover {
+    background-color: #86b4b4;
+}
+
+.about-btn {
+    /*appearance: button;*/
+    border: 2px solid black;
+    padding: 5px;
+    background-color: #dee9e9;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.about-btn:hover {
+    background-color: #86b4b4;
+}
+
+.wiki {
+    color:black;
+    text-decoration:none;
+}
+
+.wiki:hover {
+    color:#599191;
+}
